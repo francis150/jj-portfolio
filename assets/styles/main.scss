@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+$gray: #363636;
+$blue: #3E17E2;
+
+html, body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $gray;
+    scroll-behavior: smooth;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    top: 0;
+    padding: 10px 70px;
+    width: 100vw;
+    background: white;
+    opacity: 0.98;
+
+    a {
+        text-decoration: none;
+        color: $gray;
+
+        .header-title {
+            display: flex;
+
+            img {
+                height: 65px;
+            }
+
+            .texts {
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                
+                .name {
+                    font-weight: bold;
+                    font-size: 21px;
+                    line-height: 29px;
+                }
+
+                .title {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0.78em;
+                }
+            }
+        }
+    }
+
+    nav {
+        margin-left: 30%;
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-left: 70px;
+
+                a {
+                    text-decoration: none;
+                    color: $gray;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 26px;
+                    letter-spacing: 0.1em;
+                }
+            }
+        }
+    }
+
+}
+
+.landing {
+    z-index: -1;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 100px;
+
+    div {
+        margin: 0 auto;
+        display: flex;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            margin-right: -150px;
+
+            .proposition {
+                margin-top: 50px;
+                font-weight: 900;
+                font-size: 79px;
+                line-height: 108px;
+                width: 647px
+            }
+
+            .title {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.78em;
+            }
+
+            .call-action {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                margin-top: 70px;
+
+                button {
+                    width: 164px;
+                    height: 40px;
+                    background: $blue;
+                    border-radius: 5px;
+                    border: none;
+                    color: white;
+                    font-weight: 900;
+                    font-size: 17px;
+                    line-height: 25px;
+                    cursor: pointer;
+                    transition: ease-in-out transform .5s;
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                    &:active {
+                        transform: scale(0.5);
+                    }
+                }
+
+                a {
+                    color: $gray;
+                    margin: 10px;
+                    margin-left: 20px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.projects {
+    background: $gray;
+    height: 100%;
+    margin-top: 100vh;
+    padding: 70px 134px;
+    color: white;
+
+    h1 {
+        margin-top: 0;
+        font-weight: 800;
+        font-size: 75px;
+        line-height: 102px;
+        color: white;
+    }
+
+    .sub-title {
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 48px;
+        margin-right: 50px;
+    }
+
+    a {
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .projects-grid {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .project {
+            opacity: 0.9;
+            padding-right: 20px;
+            padding-bottom: 40px;
+
+            h1 {
+                margin: 0;
+                font-weight: bold;
+                font-size: 31px;
+                line-height: 42px;
+            }
+
+            p {
+                margin: 0;
+                margin-bottom: 10px;
+                font-weight: normal;
+                font-size: 26px;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+.about {
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 134px;
+
+    h1 {
+        margin: 0;
+        font-weight: 800;
+        font-size: 75px;
+        line-height: 102px;
+    }
+
+    p{
+        margin: 0;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 48px;
+        opacity: 0.9;
+    }
+
+    h4 {
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+
+        h6 {
+            background: $gray;
+            color: white;
+            padding: 3px 20px;
+            font-weight: bold;
+            font-size: 30px;
+            border-radius: 5px;
+            margin: 0;
+            margin-right: 15px;
+        }
+    }
+}
+
+.contact {
+    color: white;
+    background: $gray;
+    height: 100%;
+    padding: 70px 134px;
+    margin-bottom: 100vh;
+
+    h1 {
+        margin-top: 0;
+        font-weight: 800;
+        font-size: 75px;
+        line-height: 102px;
+        color: white;
+    }
+
+    h5 {
+        font-weight: bold;
+        font-size: 35px;
+        margin: 0;
+        margin-bottom: -20px;
+    }
+
+    a {
+        margin: 0;
+        color: white;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .contact-grid {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        span {
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 38px;
+            opacity: 0.9;
+            padding: 15px;
+        }
+    }
+}

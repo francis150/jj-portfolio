@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+html, body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #363636;
+  scroll-behavior: smooth;
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  padding: 10px 70px;
+  width: 100vw;
+  background: white;
+  opacity: 0.98;
+}
+
+header a {
+  text-decoration: none;
+  color: #363636;
+}
+
+header a .header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header a .header-title img {
+  height: 65px;
+}
+
+header a .header-title .texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+header a .header-title .texts .name {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+header a .header-title .texts .title {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.78em;
+}
+
+header nav {
+  margin-left: 30%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-left: 70px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #363636;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+}
+
+.landing {
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 100px;
+}
+
+.landing div {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing div .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: -150px;
+}
+
+.landing div .content .proposition {
+  margin-top: 50px;
+  font-weight: 900;
+  font-size: 79px;
+  line-height: 108px;
+  width: 647px;
+}
+
+.landing div .content .title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.78em;
+}
+
+.landing div .content .call-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.landing div .content .call-action button {
+  width: 164px;
+  height: 40px;
+  background: #3E17E2;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 25px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out transform .5s;
+  transition: ease-in-out transform .5s;
+}
+
+.landing div .content .call-action button:focus {
+  outline: none;
+}
+
+.landing div .content .call-action button:active {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.landing div .content .call-action a {
+  color: #363636;
+  margin: 10px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.landing div .content .call-action a img {
+  vertical-align: middle;
+}
+
+.projects {
+  background: #363636;
+  height: 100%;
+  margin-top: 100vh;
+  padding: 70px 134px;
+  color: white;
+}
+
+.projects h1 {
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 75px;
+  line-height: 102px;
+  color: white;
+}
+
+.projects .sub-title {
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 48px;
+  margin-right: 50px;
+}
+
+.projects a {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.projects .projects-grid {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.projects .projects-grid .project {
+  opacity: 0.9;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.projects .projects-grid .project h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 42px;
+}
+
+.projects .projects-grid .project p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.about {
+  height: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px 134px;
+}
+
+.about h1 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 75px;
+  line-height: 102px;
+}
+
+.about p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 48px;
+  opacity: 0.9;
+}
+
+.about h4 {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 48px;
+}
+
+.about div {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about div h6 {
+  background: #363636;
+  color: white;
+  padding: 3px 20px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 5px;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.contact {
+  color: white;
+  background: #363636;
+  height: 100%;
+  padding: 70px 134px;
+  margin-bottom: 100vh;
+}
+
+.contact h1 {
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 75px;
+  line-height: 102px;
+  color: white;
+}
+
+.contact h5 {
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: -20px;
+}
+
+.contact a {
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.contact .contact-grid {
+  margin-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.contact .contact-grid span {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 38px;
+  opacity: 0.9;
+  padding: 15px;
+}
+/*# sourceMappingURL=main.css.map */
